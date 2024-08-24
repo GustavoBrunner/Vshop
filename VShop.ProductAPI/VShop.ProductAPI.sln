@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VShop.ProductAPI", "VShop.ProductAPI\VShop.ProductAPI.csproj", "{08F5E301-4E71-4F02-9535-050EC536428D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08F5E301-4E71-4F02-9535-050EC536428D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F5E301-4E71-4F02-9535-050EC536428D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F5E301-4E71-4F02-9535-050EC536428D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F5E301-4E71-4F02-9535-050EC536428D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9E6E076-E992-4FDC-9676-023130C9EA75}
+	EndGlobalSection
+EndGlobal

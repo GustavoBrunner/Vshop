@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "AUqSzhRjhaPQ1ktEv9x6LkgHfExVGk+9faTANXGzLCE=",
+  "Source": "VShop.ProductAPI",
+  "BasePath": "_content/VShop.ProductAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
