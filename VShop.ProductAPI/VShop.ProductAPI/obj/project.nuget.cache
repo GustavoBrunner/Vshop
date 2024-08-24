@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "g6P+JVdjk64=",
+  "dgSpecHash": "sUmLWIBi2Qg=",
   "success": true,
   "projectFilePath": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.ProductAPI\\VShop.ProductAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Gustavo\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.28\\microsoft.entityframeworkcore.6.0.28.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.28\\microsoft.entityframeworkcore.abstractions.6.0.28.nupkg.sha512",

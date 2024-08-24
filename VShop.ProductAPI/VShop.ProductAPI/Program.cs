@@ -15,6 +15,8 @@ builder.Services.AddDbContext<ProductApiContext>(options =>
     options.UseMySql(connectionString,
     ServerVersion.AutoDetect(connectionString)));
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 
 var app = builder.Build();
 
