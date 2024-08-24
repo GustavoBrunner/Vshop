@@ -22,15 +22,16 @@ public class CategoryController : ControllerBase
         if(!ModelState.IsValid)
             return BadRequest(ModelState);
         
-        var category = _categoryService.GetCategoryByIdAsync(categoryDto.CategoryId);
+        var category = await _categoryService.GetCategoryByIdAsync(categoryDto.CategoryId);
         if(category is not null)
             return BadRequest("Category already exists!");
 
         await _categoryService.AddCategoryAsync(categoryDto);
-        return Ok(categoryDto); 
+        return new CreatedAtRouteResult("GetCategory",
+            new { id = category.CategoryId }, category);
     }
 
-    [HttpGet("id:string")]
+    [HttpGet("{id}", Name ="GetCategory")]
     public async Task<ActionResult<CategoryDto>> GetCategory(string id)
     {
         if (string.IsNullOrEmpty(id))
@@ -63,11 +64,15 @@ public class CategoryController : ControllerBase
         return Ok(entities);
     }
 
-    [HttpPut("{id:string}")]
+    [HttpPut("{id}")]
     public async Task<ActionResult> UpdateCategory([FromBody] CategoryDto categoryDto, string id)
     {
+        if (categoryDto.CategoryId != id)
+            return BadRequest();
+
         if (!string.IsNullOrEmpty(id))
             return BadRequest("No category informed!");
+
         if (!ModelState.IsValid)
             return BadRequest(categoryDto);
 
@@ -79,7 +84,7 @@ public class CategoryController : ControllerBase
         return Ok(category);
     }
     
-    [HttpDelete("{id:string}")]
+    [HttpDelete("{id}")]
     public async Task<ActionResult> DeleteCategory(string id)
     {
         if (string.IsNullOrEmpty(id))

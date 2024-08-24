@@ -28,10 +28,11 @@ namespace VShop.ProductAPI.Controllers
                 return BadRequest("Product already exists!");
 
             await _productService.AddNewProductAsync(product);
-            return Ok(product);
+            return new CreatedAtRouteResult("GetProduct", 
+                new {id = productDto.ProductId}, productDto);
         }
 
-        [HttpGet("{id:string}")]
+        [HttpGet("{id}", Name ="GetProduct")]
         public async Task<ActionResult<ProductDto>> GetById(string id)
         {
             if (string.IsNullOrEmpty(id))
@@ -46,7 +47,7 @@ namespace VShop.ProductAPI.Controllers
             return Ok(product);
         }
 
-        [HttpDelete("{id:string}")]
+        [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteProduct(string id)
         {
             if (string.IsNullOrEmpty(id))
@@ -60,11 +61,15 @@ namespace VShop.ProductAPI.Controllers
             return Ok(product);
         }
 
-        [HttpPut("{id:string}")]
+        [HttpPut("{id}")]
         public async Task<ActionResult> UpdateProduct([FromBody] ProductDto product, string id)
         {
+            if(product.ProductId != id) 
+                return BadRequest();
+
             if (string.IsNullOrEmpty(id))
                 return BadRequest("No product informed!");
+
             if (!ModelState.IsValid)
                 return BadRequest(product);
 
@@ -90,7 +95,7 @@ namespace VShop.ProductAPI.Controllers
         [HttpGet("/category")]
         public async Task<ActionResult<IEnumerable<ProductDto>>> GetAllIncludeCategories()
         {
-            var categories = _productService.GetAllProductsIncludeCategoryAsync();
+            var categories = await _productService.GetAllProductsIncludeCategoryAsync();
             if (categories == null)
                 return NotFound("No product found!");
             return Ok(categories);

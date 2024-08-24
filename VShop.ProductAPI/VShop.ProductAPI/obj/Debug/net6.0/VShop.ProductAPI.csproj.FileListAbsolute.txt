@@ -41,3 +41,4 @@ C:\Users\Gustavo\Documents\GitHub\Vshop\VShop.ProductAPI\VShop.ProductAPI\obj\De
 C:\Users\Gustavo\Documents\GitHub\Vshop\VShop.ProductAPI\VShop.ProductAPI\obj\Debug\net6.0\VShop.ProductAPI.pdb
 C:\Users\Gustavo\Documents\GitHub\Vshop\VShop.ProductAPI\VShop.ProductAPI\obj\Debug\net6.0\VShop.ProductAPI.genruntimeconfig.cache
 C:\Users\Gustavo\Documents\GitHub\Vshop\VShop.ProductAPI\VShop.ProductAPI\obj\Debug\net6.0\ref\VShop.ProductAPI.dll
+C:\Users\Gustavo\Documents\GitHub\Vshop\VShop.ProductAPI\VShop.ProductAPI\bin\Debug\net6.0\AutoMapper.dll

@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using VShop.ProductAPI.Models;
 
 namespace VShop.ProductAPI.DTOs;
@@ -26,5 +27,6 @@ public class ProductDto
     public long Stock { get; set; }
     public string? ImageUrl { get; set; }
     public string CategoryId { get; set; } = string.Empty ;
+    [JsonIgnore]
     public Category? Category { get; set; }
 }
