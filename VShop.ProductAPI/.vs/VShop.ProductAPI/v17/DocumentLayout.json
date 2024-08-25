@@ -1,12 +1,139 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4586525-06EE-4EC0-91AD-1A9500DBABD0}|VShop.Web\\VShop.Web.csproj|c:\\users\\gustavo\\documents\\github\\vshop\\vshop.productapi\\vshop.web\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D4586525-06EE-4EC0-91AD-1A9500DBABD0}|VShop.Web\\VShop.Web.csproj|solutionrelative:vshop.web\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4586525-06EE-4EC0-91AD-1A9500DBABD0}|VShop.Web\\VShop.Web.csproj|c:\\users\\gustavo\\documents\\github\\vshop\\vshop.productapi\\vshop.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D4586525-06EE-4EC0-91AD-1A9500DBABD0}|VShop.Web\\VShop.Web.csproj|solutionrelative:vshop.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4586525-06EE-4EC0-91AD-1A9500DBABD0}|VShop.Web\\VShop.Web.csproj|c:\\users\\gustavo\\documents\\github\\vshop\\vshop.productapi\\vshop.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4586525-06EE-4EC0-91AD-1A9500DBABD0}|VShop.Web\\VShop.Web.csproj|solutionrelative:vshop.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4586525-06EE-4EC0-91AD-1A9500DBABD0}|VShop.Web\\VShop.Web.csproj|c:\\users\\gustavo\\documents\\github\\vshop\\vshop.productapi\\vshop.web\\vshop.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D4586525-06EE-4EC0-91AD-1A9500DBABD0}|VShop.Web\\VShop.Web.csproj|solutionrelative:vshop.web\\vshop.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F5E301-4E71-4F02-9535-050EC536428D}|VShop.ProductAPI\\VShop.ProductAPI.csproj|c:\\users\\gustavo\\documents\\github\\vshop\\vshop.productapi\\vshop.productapi\\vshop.productapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{08F5E301-4E71-4F02-9535-050EC536428D}|VShop.ProductAPI\\VShop.ProductAPI.csproj|solutionrelative:vshop.productapi\\vshop.productapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4586525-06EE-4EC0-91AD-1A9500DBABD0}|VShop.Web\\VShop.Web.csproj|c:\\users\\gustavo\\documents\\github\\vshop\\vshop.productapi\\vshop.web\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4586525-06EE-4EC0-91AD-1A9500DBABD0}|VShop.Web\\VShop.Web.csproj|solutionrelative:vshop.web\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4586525-06EE-4EC0-91AD-1A9500DBABD0}|VShop.Web\\VShop.Web.csproj|c:\\users\\gustavo\\documents\\github\\vshop\\vshop.productapi\\vshop.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4586525-06EE-4EC0-91AD-1A9500DBABD0}|VShop.Web\\VShop.Web.csproj|solutionrelative:vshop.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "VShop.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "VShop.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-25T16:45:13.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VShop.Web",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.Web\\VShop.Web.csproj",
+              "RelativeDocumentMoniker": "VShop.Web\\VShop.Web.csproj",
+              "ToolTip": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.Web\\VShop.Web.csproj",
+              "RelativeToolTip": "VShop.Web\\VShop.Web.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-25T16:04:39.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VShop.ProductAPI",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.ProductAPI\\VShop.ProductAPI.csproj",
+              "RelativeDocumentMoniker": "VShop.ProductAPI\\VShop.ProductAPI.csproj",
+              "ToolTip": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.ProductAPI\\VShop.ProductAPI.csproj",
+              "RelativeToolTip": "VShop.ProductAPI\\VShop.ProductAPI.csproj",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-25T16:03:16.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.Web\\Program.cs",
+              "RelativeDocumentMoniker": "VShop.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.Web\\Program.cs",
+              "RelativeToolTip": "VShop.Web\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T15:59:56.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.Web\\Models\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "VShop.Web\\Models\\ProductViewModel.cs",
+              "ToolTip": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.Web\\Models\\ProductViewModel.cs",
+              "RelativeToolTip": "VShop.Web\\Models\\ProductViewModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T15:52:24.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.Web\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "VShop.Web\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.Web\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "VShop.Web\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwDYAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-25T15:14:23.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.Web\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "VShop.Web\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Gustavo\\Documents\\GitHub\\Vshop\\VShop.ProductAPI\\VShop.Web\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "VShop.Web\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T15:13:13.427Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

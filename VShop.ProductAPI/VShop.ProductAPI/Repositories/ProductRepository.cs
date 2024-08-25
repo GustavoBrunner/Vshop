@@ -36,7 +36,9 @@ public class ProductRepository : IProductRepository
     }
     public async Task<Product> GetProductByIdAsync(string id)
     {
-        return await _context.Products.FirstOrDefaultAsync(p => p.ProductId == id);
+        return await _context.Products
+            .Include(p => p.Category)
+            .FirstOrDefaultAsync(p => p.ProductId == id);
     }
     public async Task<bool> DeleteProductAsync(string id)
     {
@@ -56,6 +58,7 @@ public class ProductRepository : IProductRepository
     {
         return await _context.Products
             .AsNoTracking()
+            .Include(p => p.Category)
             .OrderBy(p => p.Name)
             .ToListAsync();
     }

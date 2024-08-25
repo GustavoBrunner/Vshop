@@ -1,7 +1,26 @@
+using VShop.Web.Services;
+using VShop.Web.Services.Contracts;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+
+
+//defining a http client, passing a name (can be anyone), and a specific configuration
+//to define the address of the client. We will define it in the Appsettings.json
+//its a better practice. Defining this, we have a bridge between our web app and our API
+builder.Services.AddHttpClient("ProductApi", c =>
+{
+    c.BaseAddress = new Uri(builder.Configuration["ServicesUri:ProductApi"]);
+});
+
+
+//dependency injection
+
+builder.Services.AddScoped(typeof(ICategoryService), typeof(CategoryService));
+builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
 

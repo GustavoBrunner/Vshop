@@ -26,6 +26,7 @@ public class ProductDto
     [Range(0,99999)]
     public long Stock { get; set; }
     public string? ImageUrl { get; set; }
+    public string CategoryName { get; set; } = string.Empty;
     public string CategoryId { get; set; } = string.Empty ;
     [JsonIgnore]
     public Category? Category { get; set; }

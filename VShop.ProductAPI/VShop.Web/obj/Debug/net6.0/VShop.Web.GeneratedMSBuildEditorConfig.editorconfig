@@ -14,12 +14,16 @@ build_property.EnableComHosting =
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Gustavo\Documents\GitHub\Vshop\VShop.ProductAPI\VShop.Web
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/Gustavo/Documents/GitHub/Vshop/VShop.ProductAPI/VShop.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gustavo/Documents/GitHub/Vshop/VShop.ProductAPI/VShop.Web/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Gustavo/Documents/GitHub/Vshop/VShop.ProductAPI/VShop.Web/Views/Shared/Error.cshtml]

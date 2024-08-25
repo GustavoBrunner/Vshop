@@ -86,7 +86,7 @@ namespace VShop.ProductAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductDto>>> GetAll()
         {
-            var products = _productService.GetAllProductsAsync();
+            var products = await _productService.GetAllProductsAsync();
             if (products == null)
                 return NotFound("No products found!");
             return Ok(products);
