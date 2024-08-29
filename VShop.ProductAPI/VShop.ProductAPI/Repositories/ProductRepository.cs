@@ -44,7 +44,7 @@ public class ProductRepository : IProductRepository
     {
         if (await CheckIfExists(id))
         {
-            var product = GetProductByIdAsync(id);
+            var product = await GetProductByIdAsync(id);
             _context.Entry(product).State = EntityState.Deleted;
             if(!await _unitOfWork.SaveChangesAsync())
             {

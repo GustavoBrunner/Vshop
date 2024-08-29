@@ -8,7 +8,6 @@ public class Product
     {
         ProductId = Guid.NewGuid().ToString();
     }
-
     public string ProductId { get; set; } = string.Empty;
     public decimal Price { get; set; }
     public string Name { get; set; } = string.Empty;

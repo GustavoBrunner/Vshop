@@ -20,16 +20,11 @@ namespace VShop.ProductAPI.Controllers
         [HttpPost] 
         public async Task<ActionResult> CreateProduct([FromBody] ProductDto product)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(product);
-
-            var productDto = await _productService.GetProductByIdAsync(product.ProductId);
-            if (productDto is not null)
-                return BadRequest("Product already exists!");
 
             await _productService.AddNewProductAsync(product);
-            return new CreatedAtRouteResult("GetProduct", 
-                new {id = productDto.ProductId}, productDto);
+            return Ok(product);
+                //new CreatedAtRouteResult("GetProduct", 
+                //new {id = product.ProductId}, product);
         }
 
         [HttpGet("{id}", Name ="GetProduct")]
@@ -70,15 +65,13 @@ namespace VShop.ProductAPI.Controllers
             if (string.IsNullOrEmpty(id))
                 return BadRequest("No product informed!");
 
-            if (!ModelState.IsValid)
-                return BadRequest(product);
 
             var entity = await _productService.GetProductByIdAsync(id);
             if (entity is null) 
             {
                 return NotFound("Product not found!");
             }
-            await _productService.UpdateProductAsync(entity);
+            await _productService.UpdateProductAsync(product);
 
             return Ok(entity);
         }

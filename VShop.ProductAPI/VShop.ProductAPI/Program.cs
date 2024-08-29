@@ -35,6 +35,8 @@ builder.Services.AddScoped(typeof(ICategoryService), typeof(CategoryService));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 
+builder.Services.AddCors();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -44,6 +46,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(opt =>
+    opt.AllowAnyOrigin()
+       .AllowAnyMethod()
+       .AllowAnyHeader());
 
 app.UseAuthorization();
 

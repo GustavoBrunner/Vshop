@@ -1,0 +1,35 @@
+<div class="container p-5"  *ngIf="isShowTable"> 
+
+    <div *ngIf="categories"> 
+        <div class="container p-5 border">
+            <button class="btn btn-sm btn-primary " (click)="showForm()">Adicionar categoria</button>
+            <a href="" class="btn btn-sm btn-danger m-l-1">Voltar</a>
+        </div>
+        
+        <hr>
+
+        <table class="table table-stripped table-hover p-5" >
+            <thead class=" p-5">
+            <tr>
+                <th>Categoria</th>
+                <th>Produtos</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody class=" p-5">
+            <tr *ngFor="let category of categories">
+                <td>{{category.categoryName}}</td>
+                <td>{{category.categoryName}}</td>
+                <!-- <td>{{category.price | currency: 'BRL'}}</td>
+                <td>{{category.stock}}</td>
+                <td>{{category.description}}</td> -->
+                <td>
+                    <button type="button" class="btn btn-sm btn-primary" (click)="showForm(category)">Editar</button>
+                    <button class="btn btn-sm btn-outline-danger m-l-1" (click)="delete(category.categoryId)">Excluir</button>
+                    <button class="btn btn-sm btn-success m-l-1" (click)="newProduct(category.categoryId)">Novo Produto</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

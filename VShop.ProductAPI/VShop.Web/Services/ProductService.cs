@@ -98,13 +98,15 @@ public class ProductService : IProductService
 
         using (var response = await client.PutAsJsonAsync(apiUrl, content))
         {
-            if (response.IsSuccessStatusCode) 
+            if (response.IsSuccessStatusCode)
             {
                 var apiResponse = await response.Content.ReadAsStreamAsync();
 
                 _productVM = await JsonSerializer
                         .DeserializeAsync<ProductViewModel>(apiResponse, _options);
             }
+            else
+                return null;
         }
         return _productVM;
     }

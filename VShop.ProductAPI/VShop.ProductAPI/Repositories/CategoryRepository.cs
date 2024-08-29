@@ -42,7 +42,7 @@ public class CategoryRepository : ICategoryRepository
     public async Task<bool> DeleteCategoryAsync(string id)
     {
         var category = await GetCategoryByIdAsync(id);
-        _context.Entry(category).State = ~EntityState.Deleted;
+        _context.Categories?.Remove(category);
 
         return await _unitOfWork.SaveChangesAsync();
     }

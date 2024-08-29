@@ -1,0 +1,84 @@
+<title>Produtos</title>
+
+<div class="container p-5"  *ngIf="isShowTable"> 
+
+    <div *ngIf="products"> 
+        <div class="container p-5 border">
+            <button class="btn btn-sm btn-primary " (click)="showForm()">Adicionar produto</button>
+            <a href="" class="btn btn-sm btn-danger m-l-1">Voltar</a>
+        </div>
+        
+        <hr>
+
+        <table class="table table-stripped table-hover p-5" >
+            <thead class=" p-5">
+            <tr>
+                <th>Categoria</th>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody class=" p-5">
+            <tr *ngFor="let product of products">
+                <td>{{product.categoryName}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price | currency: 'BRL'}}</td>
+                <td>{{product.stock}}</td>
+                <td>{{product.description}}</td>
+                <td>
+                    <button type="button" class="btn btn-sm btn-primary" (click)="showForm(product)">Editar</button>
+                    <button class="btn btn-sm btn-outline-danger m-l-1" (click)="delete(product.productId)">Excluir</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="container p-5" *ngIf="isShowForm">
+    <h5>{{formTitle}}</h5>
+    <hr>
+    <form [formGroup]="productForm" (ngSubmit)="sendForm()">
+        <input formControlName="productId" type="hidden" >
+        <div class="mb-3 form-group">
+          <label class="form-label">Nome</label>
+          <input formControlName="name" type="text" class="form-control form-control-sm" >
+        </div>
+        <div class="mb-3 form-group">
+          <label class="form-label">Descrição</label>
+          <input formControlName="description" type="text" class="form-control form-control-sm">
+        </div>
+        <div class="mb-3 form-group">
+            <label class="form-label">Preço</label>
+            <input formControlName="price" type="number" class="form-control form-control-sm">
+        </div>
+        <div class="mb-3 form-group">
+            <label class="form-label">Estoque</label>
+            <input formControlName="stock" type="number" class="form-control form-control-sm">
+        </div>
+
+
+        <div class="mb-3 form-group">
+            <label class="form-label">Categoria</label>
+            <select  formControlName="categoryId" id="categoryId" class="form-control form-control-sm">
+                <option *ngFor="let category of categories" [value]="category.categoryId">
+                 {{category.categoryName}}
+                </option>
+            </select>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" >Cadastrar</button>
+        <button type="button" class="btn btn-outline-danger m-l-1" (click)="showTable()">Voltar</button>
+      </form>
+
+</div>
+
+
+
+
+
+

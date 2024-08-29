@@ -9,6 +9,7 @@ namespace VShop.ProductAPI.DTOs;
 
 public class ProductDto
 {
+
     public string ProductId { get; set; } = string.Empty;
 
     [Required(ErrorMessage ="Price is required!")]

@@ -24,7 +24,18 @@ public class ProductService : IProductService
     }
     public async Task UpdateProductAsync(ProductDto product)
     {
-        var entity = _mapper.Map<Product>(product);
+        var entity = await _productRepository.GetProductByIdAsync(product.ProductId);
+        if (entity == null) 
+        {
+            return;
+        }
+        entity.Price = product.Price;
+        entity.Description = product.Description;
+        entity.Name = product.Name;
+        entity.Stock = product.Stock;
+        entity.Category = product.Category;
+        entity.CategoryId = product.CategoryId;
+        entity.ImageUrl = product.ImageUrl;
         await _productRepository.UpdateProductAsync(entity);
     }
     public async Task<ProductDto> GetProductByIdAsync(string id)

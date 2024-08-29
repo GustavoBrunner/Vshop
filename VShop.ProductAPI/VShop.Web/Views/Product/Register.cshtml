@@ -1,0 +1,56 @@
+﻿@model ProductViewModel
+@{
+    //ways to get the Id from the route
+    /* bool isUpdating = ViewContext.RouteData.Values.ContainsKey("pid");
+    * Context.Request.RouteValues("id")
+    * */
+    @if (!string.IsNullOrEmpty(Model.ProductId))
+    {
+        ViewData["Title"] = "Alteração de produto";
+    }
+    else
+    {
+        ViewData["Title"] = "Cadastro de produto";
+    }
+}
+<h1 class="text text-primary">@ViewData["Title"]</h1>
+
+<hr />
+
+
+
+<form asp-action="Register">
+    <div>
+        <input type="hidden" asp-for="@Model.ProductId" name="pid" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="@Model.Name" class="form-label">Nome</label>
+        <input asp-for="@Model.Name" type="text" class="form-control">
+        @* <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> *@
+    </div>
+    <div class="mb-3">
+        <label asp-for="@Model.Price" class="form-label">Preço</label>
+        <input asp-for="@Model.Price" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="@Model.Stock" class="form-label" >Estoque</label>
+        <input asp-for="@Model.Stock" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="@Model.CategoryId" class="form-label">Categoria</label>
+        <select asp-for="@Model.CategoryId" asp-items="@ViewBag.Categories" class="form-control"> </select>
+    </div>
+    <div class="mb-3">
+        <label asp-for="@Model.Description" class="form-label">Descrição (opcional)</label>
+        <input asp-for="@Model.Description" type="text" class="form-control">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+
+
+
+
+
+
+

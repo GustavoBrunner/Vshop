@@ -8,9 +8,8 @@
 
 <div>
     <div>
-        <a class="btn btn-primary" asp-action="Register" role="button">Novo Produto</a>
-    </div>
-    <div>
+        <a class="btn btn-primary" asp-action="Register" asp-controller="Product" 
+            role="button">Novo Produto</a>
         <a class="btn btn-danger" asp-action="Index" asp-controller="Home" 
             role="button">Voltar</a>
     </div>
@@ -50,11 +49,11 @@
                         <td>
                             <a asp-action="Delete" asp-route-pid="@p.ProductId" 
                                     class="btn btn-outline-danger" title="deletar">
-                                        <i class="bi bi-clipboard-check"></i>
+                                <i class="bi bi-trash-fill"></i>
                             </a>
-                            <a asp-action="Update" asp-route-pid="@p.ProductId" 
+                            <a asp-action="Register" asp-route-pid="@p.ProductId" 
                                     class="btn btn-outline-warning" title="atualizar">
-                                        <i class="bi bi-trash-fill"></i>
+                                <i class="bi bi-clipboard-check"></i>
                             </a>    
                         </td>
                 
